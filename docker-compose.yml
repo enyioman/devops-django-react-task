@@ -1,0 +1,12 @@
+version: '3.9'
+services:
+  react:
+    image: fynewily/task2-frontend:0.1
+    ports:
+      - "80:80"
+    restart: always
+  django:
+    image: fynewily/task2-backend:0.2
+    ports:
+      - "8000:8000"
+    restart: always 
